@@ -96,13 +96,13 @@ class NonDeterministicTuringMachine:
     # function to trace the input string 
     def trace_string(self, input_string, max_depth, output):
 
-        # make the string a list
+        # make the string a list- if the string is the empty strint just make it a _
         strlist = []
-        # create a tape from the class with the head at the first character and the right as the 2nd character 
         if input_string == "": 
             strlist.append('_')
         else: 
             strlist = list(input_string)
+        # create a tape from the class with the head at the first character and the right as the 2nd character 
         tape = Tape(state=self.start_state, head=strlist[0], right=strlist[1:])
 
         # initialize some tracking variables and a queue
