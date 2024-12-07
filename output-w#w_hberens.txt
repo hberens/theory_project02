@@ -1,0 +1,141 @@
+Name of machine: w#w
+String 1 input: 000#000
+Tree configuration depth: 9
+Total transitions taken: 10
+Execution stopped after 10 depth limit.
+
+String 2 input: 000#000
+Tree configuration depth: 32
+Total transitions taken: 32
+String 000#000 accepted in 32 transitions.
+Transitions to accept:
+,q1,0,00#000
+x,q2,0,0#000
+x0,q2,0,#000
+x00,q2,#,000
+x00#,q4,0,00
+x00,q6,#,x00
+x0,q7,0,#x00
+x,q7,0,0#x00
+,q7,x,00#x00
+x,q1,0,0#x00
+xx,q2,0,#x00
+xx0,q2,#,x00
+xx0#,q4,x,00
+xx0#x,q4,0,0
+xx0#,q6,x,x0
+xx0,q6,#,xx0
+xx,q7,0,#xx0
+x,q7,x,0#xx0
+xx,q1,0,#xx0
+xxx,q2,#,xx0
+xxx#,q4,x,x0
+xxx#x,q4,x,0
+xxx#xx,q4,0,
+xxx#x,q6,x,x
+xxx#,q6,x,xx
+xxx,q6,#,xxx
+xx,q7,x,#xxx
+xxx,q1,#,xxx
+xxx#,q8,x,xx
+xxx#x,q8,x,x
+xxx#xx,q8,x,
+xxx#xxx,q8,_,
+xxx#xxx_,q_acc,_,
+
+String 3 input: 1010#1010
+Tree configuration depth: 50
+Total transitions taken: 50
+String 1010#1010 accepted in 50 transitions.
+Transitions to accept:
+,q1,1,010#1010
+x,q3,0,10#1010
+x0,q3,1,0#1010
+x01,q3,0,#1010
+x010,q3,#,1010
+x010#,q5,1,010
+x010,q6,#,x010
+x01,q7,0,#x010
+x0,q7,1,0#x010
+x,q7,0,10#x010
+,q7,x,010#x010
+x,q1,0,10#x010
+xx,q2,1,0#x010
+xx1,q2,0,#x010
+xx10,q2,#,x010
+xx10#,q4,x,010
+xx10#x,q4,0,10
+xx10#,q6,x,x10
+xx10,q6,#,xx10
+xx1,q7,0,#xx10
+xx,q7,1,0#xx10
+x,q7,x,10#xx10
+xx,q1,1,0#xx10
+xxx,q3,0,#xx10
+xxx0,q3,#,xx10
+xxx0#,q5,x,x10
+xxx0#x,q5,x,10
+xxx0#xx,q5,1,0
+xxx0#x,q6,x,x0
+xxx0#,q6,x,xx0
+xxx0,q6,#,xxx0
+xxx,q7,0,#xxx0
+xx,q7,x,0#xxx0
+xxx,q1,0,#xxx0
+xxxx,q2,#,xxx0
+xxxx#,q4,x,xx0
+xxxx#x,q4,x,x0
+xxxx#xx,q4,x,0
+xxxx#xxx,q4,0,
+xxxx#xx,q6,x,x
+xxxx#x,q6,x,xx
+xxxx#,q6,x,xxx
+xxxx,q6,#,xxxx
+xxx,q7,x,#xxxx
+xxxx,q1,#,xxxx
+xxxx#,q8,x,xxx
+xxxx#x,q8,x,xx
+xxxx#xx,q8,x,x
+xxxx#xxx,q8,x,
+xxxx#xxxx,q8,_,
+xxxx#xxxx_,q_acc,_,
+
+String 4 input: 1#1
+Tree configuration depth: 8
+Total transitions taken: 8
+String 1#1 accepted in 8 transitions.
+Transitions to accept:
+,q1,1,#1
+x,q3,#,1
+x#,q5,1,
+x,q6,#,x
+,q7,x,#x
+x,q1,#,x
+x#,q8,x,
+x#x,q8,_,
+x#x_,q_acc,_,
+
+String 5 input: 100#01
+Tree configuration depth: 4
+Total transitions taken: 4
+String 100#01 rejected in 4 transitions.
+
+String 6 input: #
+Tree configuration depth: 2
+Total transitions taken: 2
+String # accepted in 2 transitions.
+Transitions to accept:
+,q1,#,
+#,q8,_,
+#_,q_acc,_,
+
+String 7 input: 1111111111111
+Tree configuration depth: 9
+Total transitions taken: 10
+Execution stopped after 10 depth limit.
+
+String 8 input: _
+Tree configuration depth: 0
+Total transitions taken: 0
+String _ rejected in 0 transitions.
+

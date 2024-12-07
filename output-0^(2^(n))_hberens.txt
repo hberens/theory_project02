@@ -1,0 +1,63 @@
+Name of machine: 0^(2^n)
+String 1 input: 222
+Tree configuration depth: 0
+Total transitions taken: 0
+String 222 rejected in 0 transitions.
+
+String 2 input: 0000
+Tree configuration depth: 9
+Total transitions taken: 10
+Execution stopped after 10 depth limit.
+
+String 3 input: 0000
+Tree configuration depth: 21
+Total transitions taken: 21
+String 0000 accepted in 21 transitions.
+Transitions to accept:
+,q1,0,000
+_,q2,0,00
+_x,q3,0,0
+_x0,q4,0,
+_x0x,q3,_,
+_x0,q5,x,_
+_x,q5,0,x_
+_,q5,x,0x_
+,q5,_,x0x_
+_,q2,x,0x_
+_x,q2,0,x_
+_xx,q3,x,_
+_xxx,q3,_,
+_xx,q5,x,_
+_x,q5,x,x_
+_,q5,x,xx_
+,q5,_,xxx_
+_,q2,x,xx_
+_x,q2,x,x_
+_xx,q2,x,_
+_xxx,q2,_,
+_xxx_,q_acc,_,
+
+String 4 input: 00000
+Tree configuration depth: 6
+Total transitions taken: 6
+String 00000 rejected in 6 transitions.
+
+String 5 input: 00
+Tree configuration depth: 7
+Total transitions taken: 7
+String 00 accepted in 7 transitions.
+Transitions to accept:
+,q1,0,0
+_,q2,0,
+_x,q3,_,
+_,q5,x,_
+,q5,_,x_
+_,q2,x,_
+_x,q2,_,
+_x_,q_acc,_,
+
+String 6 input: _
+Tree configuration depth: 1
+Total transitions taken: 1
+String _ rejected in 1 transitions.
+

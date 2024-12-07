@@ -1,0 +1,58 @@
+Name of machine: a*b*c* Deterministic
+String 1 input: abc
+Tree configuration depth: 4
+Total transitions taken: 4
+String abc accepted in 4 transitions.
+Transitions to accept:
+,q0,a,bc
+a,q1,b,c
+ab,q2,c,
+abc,q3,_,
+abc_,qacc,_,
+
+String 2 input: aaabbcccc
+Tree configuration depth: 10
+Total transitions taken: 10
+String aaabbcccc accepted in 10 transitions.
+Transitions to accept:
+,q0,a,aabbcccc
+a,q1,a,abbcccc
+aa,q1,a,bbcccc
+aaa,q1,b,bcccc
+aaab,q2,b,cccc
+aaabb,q2,c,ccc
+aaabbc,q3,c,cc
+aaabbcc,q3,c,c
+aaabbccc,q3,c,
+aaabbcccc,q3,_,
+aaabbcccc_,qacc,_,
+
+String 3 input: aaa
+Tree configuration depth: 4
+Total transitions taken: 4
+String aaa accepted in 4 transitions.
+Transitions to accept:
+,q0,a,aa
+a,q1,a,a
+aa,q1,a,
+aaa,q1,_,
+aaa_,qacc,_,
+
+String 4 input: aaaaabbbbbbccccccc
+Tree configuration depth: 9
+Total transitions taken: 10
+Execution stopped after 10 depth limit.
+
+String 5 input: bbbaaaa
+Tree configuration depth: 3
+Total transitions taken: 3
+String bbbaaaa rejected in 3 transitions.
+
+String 6 input: _
+Tree configuration depth: 1
+Total transitions taken: 1
+String _ accepted in 1 transitions.
+Transitions to accept:
+,q0,_,
+_,qacc,_,
+

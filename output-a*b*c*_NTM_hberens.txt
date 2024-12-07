@@ -1,0 +1,59 @@
+Name of machine: a*b*c* Nondeterministic
+String 1 input: abc
+Tree configuration depth: 4
+Total transitions taken: 7
+String abc accepted in 4 transitions.
+Transitions to accept:
+,q0,a,bc
+a,q0,b,c
+ab,q2,c,
+abc,q3,_,
+abc_,qacc,_,
+
+String 2 input: aaabbcccc
+Tree configuration depth: 10
+Total transitions taken: 17
+String aaabbcccc accepted in 10 transitions.
+Transitions to accept:
+,q0,a,aabbcccc
+a,q0,a,abbcccc
+aa,q0,a,bbcccc
+aaa,q0,b,bcccc
+aaab,q1,b,cccc
+aaabb,q2,c,ccc
+aaabbc,q2,c,cc
+aaabbcc,q2,c,c
+aaabbccc,q2,c,
+aaabbcccc,q3,_,
+aaabbcccc_,qacc,_,
+
+String 3 input: aaa
+Tree configuration depth: 4
+Total transitions taken: 6
+String aaa accepted in 4 transitions.
+Transitions to accept:
+,q0,a,aa
+a,q0,a,a
+aa,q0,a,
+aaa,q3,_,
+aaa_,qacc,_,
+
+String 4 input: aaaaabbbbbbccccccc
+Tree configuration depth: 7
+Total transitions taken: 10
+Execution stopped after 10 depth limit.
+
+String 5 input: bbbaaaa
+Tree configuration depth: 3
+Total transitions taken: 3
+String bbbaaaa rejected in 3 transitions.
+
+String 6 input: _
+Tree configuration depth: 2
+Total transitions taken: 2
+String _ accepted in 2 transitions.
+Transitions to accept:
+,q0,_,
+_,q3,_,
+__,qacc,_,
+

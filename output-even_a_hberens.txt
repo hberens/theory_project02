@@ -1,0 +1,52 @@
+Name of machine: even_a
+String 1 input: aaaa
+Tree configuration depth: 5
+Total transitions taken: 5
+String aaaa accepted in 5 transitions.
+Transitions to accept:
+,q1,a,aaa
+a,q2,a,aa
+aa,q1,a,a
+aaa,q2,a,
+aaaa,q1,_,
+aaa,qacc,a,_
+
+String 2 input: aaa
+Tree configuration depth: 3
+Total transitions taken: 3
+String aaa rejected in 3 transitions.
+
+String 3 input: bbab
+Tree configuration depth: 0
+Total transitions taken: 0
+String bbab rejected in 0 transitions.
+
+String 4 input: aaaaaaaaaa
+Tree configuration depth: 4
+Total transitions taken: 5
+Execution stopped after 5 depth limit.
+
+String 5 input: aaaaaaaa
+Tree configuration depth: 9
+Total transitions taken: 9
+String aaaaaaaa accepted in 9 transitions.
+Transitions to accept:
+,q1,a,aaaaaaa
+a,q2,a,aaaaaa
+aa,q1,a,aaaaa
+aaa,q2,a,aaaa
+aaaa,q1,a,aaa
+aaaaa,q2,a,aa
+aaaaaa,q1,a,a
+aaaaaaa,q2,a,
+aaaaaaaa,q1,_,
+aaaaaaa,qacc,a,_
+
+String 6 input: _
+Tree configuration depth: 1
+Total transitions taken: 1
+String _ accepted in 1 transitions.
+Transitions to accept:
+,q1,_,
+,qacc,_,_
+

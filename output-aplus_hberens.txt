@@ -1,0 +1,55 @@
+Name of machine: a_plus
+String 1 input: aaaaaa
+Tree configuration depth: 7
+Total transitions taken: 7
+String aaaaaa accepted in 7 transitions.
+Transitions to accept:
+,q1,a,aaaaa
+a,q1,a,aaaa
+aa,q1,a,aaa
+aaa,q1,a,aa
+aaaa,q1,a,a
+aaaaa,q1,a,
+aaaaaa,q2,_,
+aaaaa,qacc,a,_
+
+String 2 input: aaa
+Tree configuration depth: 4
+Total transitions taken: 4
+String aaa accepted in 4 transitions.
+Transitions to accept:
+,q1,a,aa
+a,q1,a,a
+aa,q1,a,
+aaa,q2,_,
+aa,qacc,a,_
+
+String 3 input: a
+Tree configuration depth: 2
+Total transitions taken: 2
+String a accepted in 2 transitions.
+Transitions to accept:
+,q1,a,
+a,q2,_,
+,qacc,a,_
+
+String 4 input: bbb
+Tree configuration depth: 0
+Total transitions taken: 0
+String bbb rejected in 0 transitions.
+
+String 5 input: aaab
+Tree configuration depth: 3
+Total transitions taken: 3
+String aaab rejected in 3 transitions.
+
+String 6 input: aaaaaaaaaaa
+Tree configuration depth: 4
+Total transitions taken: 5
+Execution stopped after 5 depth limit.
+
+String 7 input: _
+Tree configuration depth: 0
+Total transitions taken: 0
+String _ rejected in 0 transitions.
+
