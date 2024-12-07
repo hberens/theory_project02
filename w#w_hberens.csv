@@ -1,10 +1,10 @@
 w#w
-q1,q2,q3,q4,q5,q6,q7,q8,q_acc,q_rej
+q1,q2,q3,q4,q5,q6,q7,q8,qacc,qrej
 0,1,#
 0,1,#,x,_
 q1
-q_acc
-q_rej
+qacc
+qrej
 q1,0,q2,x,R
 q1,1,q3,x,R
 q1,#,q8,#,R
@@ -26,4 +26,4 @@ q6,x,q6,x,L
 q7,x,q1,x,R
 q7,1,q7,1,L
 q8,x,q8,x,R
-q8,_,q_acc,_,R
+q8,_,qacc,_,R
