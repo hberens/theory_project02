@@ -1,13 +1,1 @@
-palindrome
-q1,q2,q3,qrej,qacc
-a,b
-a,b,_
-q1
-qacc
-qrej
-q1,a,q2,_,R
-q1,b,q3,_,R
-q2,a,q2,a,R
-q2,_,qacc,_,L
-q3,b,q3,b,R
-q3,_,qacc,_,L
+
