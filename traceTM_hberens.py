@@ -100,8 +100,10 @@ class NonDeterministicTuringMachine:
         strlist = []
         if input_string == "": 
             strlist.append('_')
+            string = '_'
         else: 
             strlist = list(input_string)
+            string = input_string
         # create a tape from the class with the head at the first character and the right as the 2nd character 
         tape = Tape(state=self.start_state, head=strlist[0], right=strlist[1:])
 
@@ -149,16 +151,16 @@ class NonDeterministicTuringMachine:
 
         # different messages depending on whether the string was accepted or not
         if (accepted == True):
-            print(f"String {input_string} accepted in {level} transitions.")
-            output.write(f"String {input_string} accepted in {level} transitions.\n")
+            print(f"String {string} accepted in {level} transitions.")
+            output.write(f"String {string} accepted in {level} transitions.\n")
             output.write('Transitions to accept:\n')
             for tape in path: 
                 print(tape)
                 output.write(f'{tape}\n')
         else:
             if step < max_depth:
-                print(f'String {input_string} rejected in {max(visited.keys())} transitions.')
-                output.write(f'String {input_string} rejected in {max(visited.keys())} transitions.\n')
+                print(f'String {string} rejected in {max(visited.keys())} transitions.')
+                output.write(f'String {string} rejected in {max(visited.keys())} transitions.\n')
             
             # if the max_depth was surpassed 
             else:
@@ -193,14 +195,19 @@ def main():
         if string == "quit":
             break
 
+        if string == "":
+            input_string = '_'
+        else: 
+            input_string = string
+
         # ask for max_depth 
         max_depth = int(input("Input the max depth allowed: "))
 
         # print some info to the terminal 
         print()
         print(f'Name of machine: {ntm.name}')
-        print(f'String {count} input: {string}')
-        output.write(f'String {count} input: {string}\n')
+        print(f'String {count} input: {input_string}')
+        output.write(f'String {count} input: {input_string}\n')
 
         # call trace on the user input 
         ntm.trace_string(string, max_depth, output)
