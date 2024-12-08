@@ -112,6 +112,10 @@ class NonDeterministicTuringMachine:
         visited = {} 
         step = 0 
         accepted = False 
+    
+        # Initialize tracking variables
+        transitions_per_level = {}
+        non_leaves_per_level = {}
 
         # while there are still inputs, and we haven't reached the max_depth, loop
         while len(q) > 0 and step < max_depth:
@@ -132,22 +136,44 @@ class NonDeterministicTuringMachine:
             # apply the transition using the append_transition method
             next = self.append_transitions(current)
 
+            # Track outgoing transitions and non-leaf nodes
+            if level not in transitions_per_level:
+                transitions_per_level[level] = 0
+                non_leaves_per_level[level] = 0
+
+            if next:  # If outgoing transitions exist
+                transitions_per_level[level] += len(next)
+                non_leaves_per_level[level] += 1
+
             # if there is None, skip
             if next==None: 
                 continue
-            # otherwise, go through and append the tape, and level and path to the queue 
-            else: 
-                for tape in next:
-                    q.append((tape, level+1, path+[tape]))
+            
+            # go through and append the tape, and level and path to the queue 
+            for tape in next:
+                q.append((tape, level+1, path+[tape]))
             step += 1
+
+        # Calculate degree of nondeterminism
+
+        total_transitions = sum(transitions_per_level.values())
+        total_non_leaves = sum(non_leaves_per_level.values())
+
+        if total_non_leaves > 0:
+            degree_of_nondeterminism = total_transitions / total_non_leaves
+        else:
+            degree_of_nondeterminism = 0
 
         # print info to the terminal and write it to an output file 
         print(f'Tree configuration depth: {max(visited.keys())}')
         output.write(f'Tree configuration depth: {max(visited.keys())}\n')
 
-
         print(f"Total transitions taken: {step}")
         output.write((f"Total transitions taken: {step}\n"))
+
+        print(f"Degree of nondeterminism: {degree_of_nondeterminism:.2f}")
+        output.write(f"Degree of nondeterminism: {degree_of_nondeterminism:.2f}\n")
+
 
         # different messages depending on whether the string was accepted or not
         if (accepted == True):
