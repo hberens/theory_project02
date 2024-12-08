@@ -2,11 +2,13 @@ Name of machine: w#w
 String 1 input: 000#000
 Tree configuration depth: 9
 Total transitions taken: 10
+Degree of nondeterminism: 1.00
 Execution stopped after 10 depth limit.
 
 String 2 input: 000#000
 Tree configuration depth: 32
 Total transitions taken: 32
+Degree of nondeterminism: 1.00
 String 000#000 accepted in 32 transitions.
 Transitions to accept:
 ,q1,0,00#000
@@ -46,6 +48,7 @@ xxx#xxx_,q_acc,_,
 String 3 input: 1010#1010
 Tree configuration depth: 50
 Total transitions taken: 50
+Degree of nondeterminism: 1.00
 String 1010#1010 accepted in 50 transitions.
 Transitions to accept:
 ,q1,1,010#1010
@@ -103,6 +106,7 @@ xxxx#xxxx_,q_acc,_,
 String 4 input: 1#1
 Tree configuration depth: 8
 Total transitions taken: 8
+Degree of nondeterminism: 1.00
 String 1#1 accepted in 8 transitions.
 Transitions to accept:
 ,q1,1,#1
@@ -118,11 +122,13 @@ x#x_,q_acc,_,
 String 5 input: 100#01
 Tree configuration depth: 4
 Total transitions taken: 4
+Degree of nondeterminism: 1.00
 String 100#01 rejected in 4 transitions.
 
 String 6 input: #
 Tree configuration depth: 2
 Total transitions taken: 2
+Degree of nondeterminism: 1.00
 String # accepted in 2 transitions.
 Transitions to accept:
 ,q1,#,
@@ -132,10 +138,12 @@ Transitions to accept:
 String 7 input: 1111111111111
 Tree configuration depth: 9
 Total transitions taken: 10
+Degree of nondeterminism: 1.00
 Execution stopped after 10 depth limit.
 
 String 8 input: _
 Tree configuration depth: 0
 Total transitions taken: 0
+Degree of nondeterminism: 0.00
 String _ rejected in 0 transitions.
 

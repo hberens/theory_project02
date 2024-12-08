@@ -2,6 +2,7 @@ Name of machine: a_plus
 String 1 input: aaaaaa
 Tree configuration depth: 7
 Total transitions taken: 7
+Degree of nondeterminism: 1.86
 String aaaaaa accepted in 7 transitions.
 Transitions to accept:
 ,q1,a,aaaaa
@@ -16,6 +17,7 @@ aaaaa,qacc,a,_
 String 2 input: aaa
 Tree configuration depth: 4
 Total transitions taken: 4
+Degree of nondeterminism: 1.75
 String aaa accepted in 4 transitions.
 Transitions to accept:
 ,q1,a,aa
@@ -27,6 +29,7 @@ aa,qacc,a,_
 String 3 input: a
 Tree configuration depth: 2
 Total transitions taken: 2
+Degree of nondeterminism: 1.50
 String a accepted in 2 transitions.
 Transitions to accept:
 ,q1,a,
@@ -36,20 +39,24 @@ a,q2,_,
 String 4 input: bbb
 Tree configuration depth: 0
 Total transitions taken: 0
+Degree of nondeterminism: 0.00
 String bbb rejected in 0 transitions.
 
 String 5 input: aaab
 Tree configuration depth: 3
 Total transitions taken: 3
+Degree of nondeterminism: 2.00
 String aaab rejected in 3 transitions.
 
 String 6 input: aaaaaaaaaaa
 Tree configuration depth: 4
 Total transitions taken: 5
+Degree of nondeterminism: 2.00
 Execution stopped after 5 depth limit.
 
 String 7 input: _
 Tree configuration depth: 0
 Total transitions taken: 0
+Degree of nondeterminism: 0.00
 String _ rejected in 0 transitions.
 

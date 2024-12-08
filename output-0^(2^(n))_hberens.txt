@@ -2,17 +2,20 @@ Name of machine: 0^(2^n)
 String 1 input: 222
 Tree configuration depth: 0
 Total transitions taken: 0
+Degree of nondeterminism: 0.00
 String 222 rejected in 0 transitions.
 
 String 2 input: 0000
 Tree configuration depth: 9
 Total transitions taken: 10
+Degree of nondeterminism: 1.00
 Execution stopped after 10 depth limit.
 
 String 3 input: 0000
 Tree configuration depth: 21
 Total transitions taken: 21
 String 0000 accepted in 21 transitions.
+Degree of nondeterminism: 1.00
 Transitions to accept:
 ,q1,0,000
 _,q2,0,00
@@ -40,11 +43,13 @@ _xxx_,q_acc,_,
 String 4 input: 00000
 Tree configuration depth: 6
 Total transitions taken: 6
+Degree of nondeterminism: 1.00
 String 00000 rejected in 6 transitions.
 
 String 5 input: 00
 Tree configuration depth: 7
 Total transitions taken: 7
+Degree of nondeterminism: 1.00
 String 00 accepted in 7 transitions.
 Transitions to accept:
 ,q1,0,0
@@ -59,5 +64,6 @@ _x_,q_acc,_,
 String 6 input: _
 Tree configuration depth: 1
 Total transitions taken: 1
+Degree of nondeterminism: 1.00
 String _ rejected in 1 transitions.
 

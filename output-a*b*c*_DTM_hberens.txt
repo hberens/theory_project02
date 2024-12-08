@@ -2,6 +2,7 @@ Name of machine: a*b*c* Deterministic
 String 1 input: abc
 Tree configuration depth: 4
 Total transitions taken: 4
+Degree of nondeterminism: 1.00
 String abc accepted in 4 transitions.
 Transitions to accept:
 ,q0,a,bc
@@ -13,6 +14,7 @@ abc_,qacc,_,
 String 2 input: aaabbcccc
 Tree configuration depth: 10
 Total transitions taken: 10
+Degree of nondeterminism: 1.00
 String aaabbcccc accepted in 10 transitions.
 Transitions to accept:
 ,q0,a,aabbcccc
@@ -30,6 +32,7 @@ aaabbcccc_,qacc,_,
 String 3 input: aaa
 Tree configuration depth: 4
 Total transitions taken: 4
+Degree of nondeterminism: 1.00
 String aaa accepted in 4 transitions.
 Transitions to accept:
 ,q0,a,aa
@@ -41,16 +44,19 @@ aaa_,qacc,_,
 String 4 input: aaaaabbbbbbccccccc
 Tree configuration depth: 9
 Total transitions taken: 10
+Degree of nondeterminism: 1.00
 Execution stopped after 10 depth limit.
 
 String 5 input: bbbaaaa
 Tree configuration depth: 3
 Total transitions taken: 3
+Degree of nondeterminism: 1.00
 String bbbaaaa rejected in 3 transitions.
 
 String 6 input: _
 Tree configuration depth: 1
 Total transitions taken: 1
+Degree of nondeterminism: 1.00
 String _ accepted in 1 transitions.
 Transitions to accept:
 ,q0,_,
